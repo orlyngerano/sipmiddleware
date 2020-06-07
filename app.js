@@ -20,7 +20,7 @@ drachtioSrf.options(async (req, res) => {
 
   const { Item } = await dynamoDB
     .getItem({
-      TableName: "useragents",
+      TableName: "customheader",
       Key: {
         ipaddress: { S: req.source_address },
       },
